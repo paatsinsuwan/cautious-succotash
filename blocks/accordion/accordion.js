@@ -1,6 +1,6 @@
 function decorateAccordion(el) {
   const titles = el.querySelectorAll(':scope > div:nth-child(odd)');
-  titles.forEach(title => {
+  titles.forEach((title) => {
     title.classList.add('item-title');
     title.querySelector(':scope > div:last-of-type').remove();
     // Add a class to the content
